@@ -1,0 +1,27 @@
+@import '../../app/styles/variable';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  font-family: $fonteMedium;
+}
+
+.container p {
+  margin: 0;
+}
+
+.subGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pinkText {
+  color: $rosa;
+}
+
+.truck {
+  width: 30px;
+}
