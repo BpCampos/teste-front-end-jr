@@ -6,10 +6,15 @@
   justify-content: space-around;
   width: 100%;
   font-family: $fonteMedium;
-}
 
-.container p {
-  margin: 0;
+  p {
+    margin: 0;
+    color: #9f9f9f;
+  }
+
+  img {
+    width: 30px;
+  }
 }
 
 .subGroup {
@@ -20,8 +25,4 @@
 
 .pinkText {
   color: $rosa;
-}
-
-.truck {
-  width: 30px;
 }
