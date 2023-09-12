@@ -1,0 +1,32 @@
+@import '../../app/styles/variable';
+
+.categories {
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  div {
+    text-align: center;
+    font-family: $fonteSemiBold;
+    color: #4e4e4e;
+    font-size: 16px;
+
+    &:first-child {
+      color: $rosa;
+
+      img {
+        background-color: white;
+      }
+    }
+
+    img {
+      background-color: #f4f4f4;
+      padding: 30px;
+      border-radius: 7px;
+      box-shadow: 1px 1px 10px #dbdbdb;
+    }
+  }
+}
