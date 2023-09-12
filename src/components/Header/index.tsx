@@ -1,11 +1,12 @@
 import React from 'react'
 import styles from './Header.module.scss'
 import Image from 'next/image'
+import HeaderIcons from './HeaderIcons'
 
 export default function Header() {
   return (
     <header>
-      <section className={styles.container}>
+      <section className={styles.containerTop}>
         <div className={styles.subGroup}>
           <img src="icons/shield.svg" alt="" />
           <p>
@@ -25,7 +26,45 @@ export default function Header() {
           </p>
         </div>
       </section>
-      <section></section>
+      <section className={styles.containerMiddle}>
+        <img src="icons/logo.svg" alt="" />
+        <form action="">
+          <input type="search" name="search" id="search" placeholder="O que você está buscando?" />
+          <button>
+            <img src="icons/search.svg" alt="" />
+          </button>
+        </form>
+        <div className={styles.containerMiddle__icons}>
+          <HeaderIcons iconPath="icons/box.svg" />
+          <HeaderIcons iconPath="icons/heart.svg" />
+          <HeaderIcons iconPath="icons/userCircle.svg" />
+          <HeaderIcons iconPath="icons/shoppingCart.svg" />
+        </div>
+      </section>
+      <section className={styles.containerBottom}>
+        <div>
+          <p>TODAS AS CATEGORIAS</p>
+        </div>
+        <div>
+          <p>SUPERMERCADO</p>
+        </div>
+        <div>
+          <p>LIVROS</p>
+        </div>
+        <div>
+          <p>MODA</p>
+        </div>
+        <div>
+          <p>LANÇAMENTOS</p>
+        </div>
+        <div>
+          <p className={styles.pinkText}>OFERTAS DO DIA</p>
+        </div>
+        <div>
+          <img src="" alt="" />
+          <p>ASSINATURA</p>
+        </div>
+      </section>
     </header>
   )
 }
