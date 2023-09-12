@@ -1,7 +1,30 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import styles from './Products.module.scss'
+import ProductsTemplate from './ProductsTemplate'
+
+type ProductInfo = {
+  productName?: string
+  descriptionShort?: string
+  price?: string
+  photo?: string
+}
 
 export default function Products() {
+  const [products, setProducts] = useState([{}])
+
+  useEffect(() => {
+    const getProducts = async () => {
+      const response = await fetch(
+        'https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json'
+      )
+      const productsList = await response.json()
+
+      setProducts(productsList.products)
+    }
+    getProducts()
+  }, [])
+
   return (
     <div className={styles.products}>
       <section className={styles.products__title}>
@@ -17,7 +40,17 @@ export default function Products() {
         <div>TVS</div>
         <div>VER TODOS</div>
       </section>
-      <section></section>
+      <section className={styles.products__templates}>
+        {products.slice(0, 4).map((product: ProductInfo) => {
+          return (
+            <ProductsTemplate
+              key={product.productName}
+              descriptionShort={product.descriptionShort}
+              photo={product.photo}
+            />
+          )
+        })}
+      </section>
     </div>
   )
 }

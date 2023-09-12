@@ -1,0 +1,20 @@
+@import '../../../app/styles/variable';
+
+.template {
+  padding: 10px;
+  box-shadow: 1px 1px 10px rgb(207, 206, 206);
+  border-radius: 8px;
+
+  p {
+    margin: 0;
+  }
+
+  &__price {
+    font-family: $fonteBold;
+    font-size: 20px;
+  }
+
+  img {
+    margin-top: 10px;
+  }
+}
