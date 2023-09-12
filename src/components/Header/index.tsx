@@ -61,7 +61,7 @@ export default function Header() {
           <p className={styles.pinkText}>OFERTAS DO DIA</p>
         </div>
         <div>
-          <img src="" alt="" />
+          <Image src="icons/crown.svg" alt="" width={20} height={20} />
           <p>ASSINATURA</p>
         </div>
       </section>
