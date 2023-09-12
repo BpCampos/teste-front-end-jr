@@ -1,0 +1,53 @@
+@import '../../app/styles/variable';
+
+.products {
+  &__title {
+    position: relative;
+    margin-top: 70px;
+
+    div {
+      border-top: 1px solid #dedede;
+      z-index: -1;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    p {
+      position: absolute;
+      top: -50px;
+      z-index: 100;
+      background-color: white;
+      left: 37%;
+      padding: 0 30px;
+      font-size: 30px;
+      color: $rosa;
+      font-family: $fonteBold;
+    }
+  }
+
+  &__navBar {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    width: 1280px;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #bdbdbd;
+      width: 100%;
+      text-align: center;
+      height: 40px;
+      padding: 12px 58px;
+      font-size: 16px;
+      box-sizing: border-box;
+
+      &:first-child {
+        color: $rosa;
+        font-family: $fonteBold;
+      }
+    }
+  }
+}
