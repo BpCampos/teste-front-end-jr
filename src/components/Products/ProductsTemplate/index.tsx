@@ -6,9 +6,10 @@ interface Product {
   descriptionShort?: string
   price?: string
   photo?: string
+  openModal: () => void
 }
 
-export default function ProductsTemplate({ productName, descriptionShort, price, photo }: Product) {
+export default function ProductsTemplate({ openModal, productName, descriptionShort, price, photo }: Product) {
   return (
     <div className={styles.template} key={productName}>
       <img src={photo} alt="" />
@@ -17,7 +18,7 @@ export default function ProductsTemplate({ productName, descriptionShort, price,
       <p className={styles.template__price}>R$ 28,90</p>
       <p className={styles.template__installment}>ou 2x de R$ 49,95 sem juros</p>
       <p className={styles.template__shipment}>Frete grátis</p>
-      <button>COMPRAR</button>
+      <button onClick={() => openModal()}>COMPRAR</button>
     </div>
   )
 }

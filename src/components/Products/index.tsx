@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Products.module.scss'
 import ProductsTemplate from './ProductsTemplate'
+import Modal from './Modal'
 
 type ProductInfo = {
   productName?: string
@@ -12,6 +13,7 @@ type ProductInfo = {
 
 export default function Products() {
   const [products, setProducts] = useState([{}])
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     const getProducts = async () => {
@@ -24,6 +26,14 @@ export default function Products() {
     }
     getProducts()
   }, [])
+
+  function openModal() {
+    if (isOpen === false) {
+      setIsOpen(true)
+    } else {
+      setIsOpen(false)
+    }
+  }
 
   return (
     <div className={styles.products}>
@@ -47,10 +57,12 @@ export default function Products() {
               key={product.productName}
               descriptionShort={product.descriptionShort}
               photo={product.photo}
+              openModal={openModal}
             />
           )
         })}
       </section>
+      {isOpen && <Modal setIsOpen={setIsOpen} />}
     </div>
   )
 }

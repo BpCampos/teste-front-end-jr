@@ -105,6 +105,10 @@
         color: white;
         font-family: $fonteSemiBold;
       }
+
+      button:hover {
+        cursor: pointer;
+      }
     }
   }
 
