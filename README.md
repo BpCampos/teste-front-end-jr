@@ -1,3 +1,9 @@
+# Pré requisitos
+
+Antesde rodar o projeto é necessário que você tenha o `Node.js` instalado, assim como o `NPM`
+
+download [Node.js](https://nodejs.org/en)
+
 # Instalação
 
 Primeiro clone o repositório para a sua máquina local pelo comando:
