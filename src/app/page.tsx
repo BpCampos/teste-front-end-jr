@@ -1,6 +1,7 @@
 import Banner from '@/components/Banner'
-import Brands from '@/components/Brands/Index'
+import Brands from '@/components/Brands'
 import Categories from '@/components/Categories'
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import MoreProducts from '@/components/MoreProducts'
 import Partners from '@/components/Partners'
@@ -17,6 +18,7 @@ export default function page() {
       <Partners />
       <MoreProducts />
       <Brands />
+      <Footer />
     </>
   )
 }
