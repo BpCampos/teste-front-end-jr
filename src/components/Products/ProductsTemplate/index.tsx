@@ -10,14 +10,14 @@ interface Product {
 
 export default function ProductsTemplate({ productName, descriptionShort, price, photo }: Product) {
   return (
-    <div className={styles.template}>
+    <div className={styles.template} key={productName}>
       <img src={photo} alt="" />
-      <p>{descriptionShort}</p>
-      <p>R$ 30,90</p>
+      <p className={styles.template__name}>{descriptionShort}</p>
+      <p className={styles.template__oldPrice}>R$ 30,90</p>
       <p className={styles.template__price}>R$ 28,90</p>
-      <p>ou 2x de R$ 49,95 sem juros</p>
-      <p>Frete grátis</p>
-      <button>Comprar</button>
+      <p className={styles.template__installment}>ou 2x de R$ 49,95 sem juros</p>
+      <p className={styles.template__shipment}>Frete grátis</p>
+      <button>COMPRAR</button>
     </div>
   )
 }

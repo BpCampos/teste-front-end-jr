@@ -1,0 +1,58 @@
+@import '../../app/styles/variable';
+
+.partners {
+  width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 70px;
+
+  section {
+    position: relative;
+    height: 330px;
+    background-image: linear-gradient(transparent, 60%, rgb(0, 0, 0, 0.85));
+    border-radius: 20px;
+  }
+
+  img {
+    position: relative;
+    border-radius: 20px;
+    z-index: -1;
+  }
+
+  div {
+    position: absolute;
+    top: 110px;
+    left: 50px;
+
+    p {
+      color: white;
+      margin: 0;
+
+      &:first-child {
+        font-size: 40px;
+        font-family: $fonteBold;
+      }
+
+      &:nth-child(2) {
+        width: 65%;
+        font-weight: 400;
+        margin-top: 10px;
+      }
+    }
+
+    button {
+      background-color: $rosa;
+      color: white;
+      border: none;
+      width: 134.59px;
+      height: 48px;
+      border-radius: 10px;
+      font-weight: 900;
+      font-size: 16px;
+      margin-top: 30px;
+      letter-spacing: 1px;
+    }
+  }
+}

@@ -4,9 +4,34 @@
   padding: 10px;
   box-shadow: 1px 1px 10px rgb(207, 206, 206);
   border-radius: 8px;
+  line-height: 28px;
+
+  img {
+    margin-top: 10px;
+  }
 
   p {
     margin: 0;
+  }
+
+  &__name {
+    font-family: $fonteLight;
+    font-size: 15px;
+  }
+
+  &__oldPrice {
+    position: relative;
+    color: #808080;
+
+    &::after {
+      content: '';
+      width: 70px;
+      height: 1px;
+      background: #808080;
+      position: absolute;
+      bottom: 13px;
+      left: 0;
+    }
   }
 
   &__price {
@@ -14,7 +39,23 @@
     font-size: 20px;
   }
 
-  img {
-    margin-top: 10px;
+  &__installment {
+    font-size: 12px;
+  }
+
+  &__shipment {
+    font-size: 12px;
+    color: $rosa;
+  }
+
+  button {
+    width: 100%;
+    height: 44px;
+    background-color: $rosa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: $fonteBold;
   }
 }
