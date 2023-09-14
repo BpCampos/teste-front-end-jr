@@ -2,7 +2,7 @@
 
 Antesde rodar o projeto é necessário que você tenha o `Node.js` instalado, assim como o `NPM`
 
-download [Node.js](https://nodejs.org/en)
+Download [Node.js](https://nodejs.org/en)
 
 # Instalação
 
