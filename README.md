@@ -31,7 +31,7 @@ npm install
 Para iniciar o servidor local da aplicação, digite o seguinte comando no terminal
 
 ```
-npm start
+npm run dev
 ```
 
 Após um curto tempo, um servidor localhost aparecerá no seu terminal, clique nele com Ctrl + botão esquerdo do mouse para abrir o projeto em uma aba do navegador
