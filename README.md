@@ -12,6 +12,12 @@ Primeiro clone o repositório para a sua máquina local pelo comando:
 git clone https://github.com/BpCampos/teste-front-end-jr.git
 ```
 
+Vá até a pasta do projeto
+
+```
+cd teste-front-end-jr.git
+```
+
 Instale as dependências do projeto pelo terminal através do comando
 
 ```
