@@ -53,6 +53,8 @@ export default function Products() {
           )
         })}
       </section>
+      <img className={styles.products__leftVector} src="/icons/leftVector.svg" alt="" />
+      <img className={styles.products__rightVector} src="/icons/rightVector.svg" alt="" />
     </div>
   )
 }

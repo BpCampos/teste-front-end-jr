@@ -1,6 +1,8 @@
 @import '../../app/styles/variable';
 
 .products {
+  position: relative;
+
   &__title {
     position: relative;
     margin-top: 70px;
@@ -57,5 +59,25 @@
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+  }
+
+  &__leftVector {
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+
+  &__leftVector:hover {
+    cursor: pointer;
+  }
+
+  &__rightVector {
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+
+  &__rightVector:hover {
+    cursor: pointer;
   }
 }
